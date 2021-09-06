@@ -128,6 +128,23 @@ $ has-iterator-symbol-support
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/has-async-iterator-symbol-support`][@stdlib/assert/has-async-iterator-symbol-support]: detect native Symbol.asyncIterator support.
+-   [`@stdlib/assert/has-symbol-support`][@stdlib/assert/has-symbol-support]: detect native Symbol support.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -184,6 +201,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-has-iterator-symbol-support/main/LICENSE
 
 [mdn-iterator-symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator
+
+<!-- <related-links> -->
+
+[@stdlib/assert/has-async-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-async-iterator-symbol-support
+
+[@stdlib/assert/has-symbol-support]: https://github.com/stdlib-js/assert-has-symbol-support
+
+<!-- </related-links> -->
 
 </section>
 
