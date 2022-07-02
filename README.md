@@ -24,30 +24,14 @@ limitations under the License.
 
 > Detect native [`Symbol.iterator`][mdn-iterator-symbol] support.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-has-iterator-symbol-support
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var hasIteratorSymbolSupport = require( '@stdlib/assert-has-iterator-symbol-support' );
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@deno/mod.js';
 ```
 
 #### hasIteratorSymbolSupport()
@@ -70,7 +54,7 @@ var bool = hasIteratorSymbolSupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var hasIteratorSymbolSupport = require( '@stdlib/assert-has-iterator-symbol-support' );
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@deno/mod.js';
 
 var bool = hasIteratorSymbolSupport();
 if ( bool ) {
@@ -84,59 +68,7 @@ if ( bool ) {
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/assert-has-iterator-symbol-support
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: has-iterator-symbol-support [options]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ has-iterator-symbol-support
-<boolean>
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -162,7 +94,7 @@ $ has-iterator-symbol-support
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -226,9 +158,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-async-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-async-iterator-symbol-support
+[@stdlib/assert/has-async-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-async-iterator-symbol-support/tree/deno
 
-[@stdlib/assert/has-symbol-support]: https://github.com/stdlib-js/assert-has-symbol-support
+[@stdlib/assert/has-symbol-support]: https://github.com/stdlib-js/assert-has-symbol-support/tree/deno
 
 <!-- </related-links> -->
 
