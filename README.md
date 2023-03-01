@@ -24,38 +24,31 @@ limitations under the License.
 
 > Detect native [`Symbol.iterator`][mdn-iterator-symbol] support.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-has-iterator-symbol-support
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-hasIteratorSymbolSupport = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var hasIteratorSymbolSupport = require( 'path/to/vendor/umd/assert-has-iterator-symbol-support/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.hasIteratorSymbolSupport;
-})();
-</script>
+var hasIteratorSymbolSupport = require( '@stdlib/assert-has-iterator-symbol-support' );
 ```
 
 #### hasIteratorSymbolSupport()
@@ -77,13 +70,8 @@ var bool = hasIteratorSymbolSupport();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var hasIteratorSymbolSupport = require( '@stdlib/assert-has-iterator-symbol-support' );
 
 var bool = hasIteratorSymbolSupport();
 if ( bool ) {
@@ -91,18 +79,65 @@ if ( bool ) {
 } else {
     console.log( 'Environment lacks Symbol.iterator support.' );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/assert-has-iterator-symbol-support-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: has-iterator-symbol-support [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ has-iterator-symbol-support
+<boolean>
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -112,8 +147,8 @@ if ( bool ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/has-async-iterator-symbol-support`][@stdlib/assert/has-async-iterator-symbol-support]</span><span class="delimiter">: </span><span class="description">detect native Symbol.asyncIterator support.</span>
--   <span class="package-name">[`@stdlib/assert/has-symbol-support`][@stdlib/assert/has-symbol-support]</span><span class="delimiter">: </span><span class="description">detect native Symbol support.</span>
+-   <span class="package-name">[`@stdlib/assert-has-async-iterator-symbol-support`][@stdlib/assert/has-async-iterator-symbol-support]</span><span class="delimiter">: </span><span class="description">detect native Symbol.asyncIterator support.</span>
+-   <span class="package-name">[`@stdlib/assert-has-symbol-support`][@stdlib/assert/has-symbol-support]</span><span class="delimiter">: </span><span class="description">detect native Symbol support.</span>
 
 </section>
 
@@ -178,6 +213,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/assert-has-iterator-symbol-support#cli
+[cli-url]: https://github.com/stdlib-js/assert-has-iterator-symbol-support/tree/cli
+[@stdlib/assert-has-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-iterator-symbol-support/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -192,9 +231,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-async-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-async-iterator-symbol-support/tree/umd
+[@stdlib/assert/has-async-iterator-symbol-support]: https://github.com/stdlib-js/assert-has-async-iterator-symbol-support
 
-[@stdlib/assert/has-symbol-support]: https://github.com/stdlib-js/assert-has-symbol-support/tree/umd
+[@stdlib/assert/has-symbol-support]: https://github.com/stdlib-js/assert-has-symbol-support
 
 <!-- </related-links> -->
 
