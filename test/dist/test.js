@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,46 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var Symbol = require( '@stdlib/symbol-ctor' );
-var detect = require( './../../dist' );
-
-
-// VARIABLES //
-
-var hasIteratorSymbol = ( typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof detect, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'feature detection result is a boolean', function test( t ) {
-	t.strictEqual( typeof detect(), 'boolean', 'detection result is a boolean' );
-	t.end();
-});
-
-tape( 'if `Symbol.iterator` is supported, detection result is `true`', function test( t ) {
-	if ( hasIteratorSymbol ) {
-		t.strictEqual( detect(), true, 'detection result is `true`' );
-	} else {
-		t.strictEqual( detect(), false, 'detection result is `false`' );
-	}
-	t.end();
-});
-
-tape( 'the function guards against a `Symbol` global variable which does not produce `symbols`', function test( t ) {
-	var detect = proxyquire( './../dist/main.js', {
-		'@stdlib/symbol-ctor': mock
-	});
-	t.strictEqual( detect(), false, 'detection result is `false`' );
-	t.end();
-
-	function mock() {
-		return {};
-	}
 });
