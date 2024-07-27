@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@deno/mod.js';
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@v0.2.2-deno/mod.js';
 ```
 
 #### hasIteratorSymbolSupport()
@@ -65,7 +65,7 @@ var bool = hasIteratorSymbolSupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@deno/mod.js';
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@v0.2.2-deno/mod.js';
 
 var bool = hasIteratorSymbolSupport();
 if ( bool ) {
