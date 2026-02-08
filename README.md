@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-has-iterator-symbol-support/tags). For example,
+
+```javascript
 import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@v0.2.3-esm/index.mjs';
 ```
 
@@ -70,7 +75,7 @@ var bool = hasIteratorSymbolSupport();
 <body>
 <script type="module">
 
-import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@v0.2.3-esm/index.mjs';
+import hasIteratorSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-iterator-symbol-support@esm/index.mjs';
 
 var bool = hasIteratorSymbolSupport();
 if ( bool ) {
